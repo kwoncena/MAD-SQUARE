@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Square</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Mad Square Logo" class="logo">
+        </a>
+        <nav>
+            
+            <button onclick="showTab('marketplace')">Marketplace</button>
+            <button onclick="showTab('sudoku')">Sudoku</button>
+            <button onclick="showTab('soundmap')">Sound Map</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="marketplace" class="tab-content" style="display: none;">
+            <iframe src="https://kwoncena.github.io/mspmp/" frameborder="0"></iframe>
+        </section>
+    
+        
+        <section id="sudoku" class="tab-content" style="display: none;">
+            <iframe src="https://kwoncena.github.io/sudokumsp/" frameborder="0"></iframe>
+        </section>
+        <section id="soundmap" class="tab-content">
+            <iframe src="https://kwoncena.github.io/soundmapmsp/" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
